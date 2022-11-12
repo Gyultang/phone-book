@@ -1,38 +1,30 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Signika+Negative:wght@400;700&family=Single+Day&family=Ubuntu:wght@400;500&display=swap');
+.main-page{
+  background-color: #5e8db183;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+.title{
   text-align: center;
+  padding: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.search-box{
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.image-icon img{
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-box{
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Single Day', cursive;
+  font-size: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-box{
+ padding: 12px;
 }
