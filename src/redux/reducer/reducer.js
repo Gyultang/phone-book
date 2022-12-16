@@ -8,13 +8,19 @@ function reducer(state=initialState, action){
 
   switch(type){
     case "ADD_CONTACT":
-        return{...state,contact:[...state.contact,{name:payload.name,phoneNumber:payload.phoneNumber,},],}; 
-        break;
+        // return{...state,contact:[...state.contact,{name:payload.name,phoneNumber:payload.phoneNumber,},],}; 
+        // break;
+        state.contact.push({
+            name: payload.name,
+            phoneNumber: payload.phoneNumber,
+          });  break;
     case "SEARCH_NAME":
         state.keyword = payload.keyword;
-        default: return{...state}
+        break;
+        // return{...state,keyword : payload.keyword};
+        // default: return{...state}
   };
-  
+  return { ...state };
 }
 
 export default reducer;
